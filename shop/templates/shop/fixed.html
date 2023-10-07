@@ -1,0 +1,29 @@
+{% extends "shop/layouts/main.html" %}
+    {%block title%}
+         Fix wages
+    {%endblock title%}
+    {%block contenttitle%}	
+        <h2> Fixed Amount</h2>			
+    {%endblock contenttitle%}
+    {%block content%}
+    <h2>
+    <form id="fixedmenu">
+        <label for="billingdate">Billing Date &nbsp;&nbsp;: </label>
+        &ensp;<input type="date" id="billdate" name="billdate"><br><br>
+        <label for="shopname">Shop Name &ensp;: </label>
+        &ensp;<input type="text" id="shopname" name="shopname" placeholder="Enter Shop Name..."><br><br>
+        <label for="invoiceno">Invoice No &ensp;&nbsp;: </label>
+        &ensp;<input type="text" id="invoiceno" name="invoiceno" placeholder="Enter Invoice No..."><br><br>
+        <label for="qty">Qty&emsp;&emsp;&emsp;&ensp;&nbsp; : </label>
+        &ensp;<input type="text" id="qty" name="qty" placeholder="Enter Qty..."><br><br>
+        <label for="amount">Amount &emsp;&ensp;&nbsp;: </label>
+        &ensp;<input type="text" id="amount" name="amount" placeholder="Enter Total Amount..."><br><br>
+        <label for="uploadfile" >Upload File &nbsp;: </label>
+        &ensp;<input type="file" id="uploadfile" name="uploadfile" ><br><br> 
+        <input id="submit" type="submit" value="Submit">&ensp;
+        <input id="clear" type="button" value="Clear">
+    </form>
+    
+    
+    </h2>
+    {%endblock content%}

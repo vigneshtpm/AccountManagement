@@ -1,0 +1,59 @@
+{%load static%}
+<html>
+     <head>
+		<title>
+		{%block title%}
+		Computer Science
+		{%endblock title%}
+        </title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/fixed.css' %}">
+
+		<style>
+			#content{
+				background-image: url("{% static 'images/logo.jpg' %}");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 800px 800px;
+				height:1000px;
+				left: 0px;
+				bottom: 0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	 </head>
+	 <body>
+		<div id="menu">
+              <h2 id="title1"> Department of Computer Science</h2>
+		</div>
+		<div id="nav" >
+			<ul>
+				&emsp;&emsp;
+				<li><a href="{%url 'index'%}" target="_parent">Home</a></li>&ensp;
+				<li><a href="{%url 'fixed'%}" target="_parent">Fixed</a></li>&ensp;
+				<li><a href="{%url 'Nonfixed'%}" target="_parent">Non-fixed</a></li>&ensp;
+				<li><a href="{%url 'Statement'%}" target="_parent">Statement</a></li>&ensp;
+				<li><a href="{%url 'about'%}" target="_parent" >About</a></li>
+			</ul>
+			<ul>
+				<li><a href="{%url 'help'%}" target="_parent">Help &#63;</a></li>
+			</ul>
+		</div>
+		<div id="content" background-image:"{% static 'css/logo.jpg' %}";>
+			
+			<div id="contentin"><center>
+				{%block contenttitle%}
+				{%endblock contenttitle%}
+				</center><hr>
+				{%block content%}
+				{%endblock content%}
+			</div>
+		</div>
+		<div id="bottom"><center>
+			<br>
+          <p > &#169; Copyright</p></center>
+		</div>
+	 </body>
+</html>
