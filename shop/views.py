@@ -19,7 +19,8 @@ def insertfixed(request):
     price1=request.POST['amount1'];
     us=FixedAmount(date=date1,type="fixed expense",shop_name=shop_name1,invoice_no=invoice_no1,item_name=item_name1,qty=qty1,price=price1);
     us.save();
-    return render (request,"shop/fixed.html",{})
+    messages.success(request,'Your Data is Sucessfuly Saved...')
+    return render (request,"shop/fixed.html")
 
 def insertnonfixed(request):
     date2=request.POST['billdate2'];
@@ -30,6 +31,7 @@ def insertnonfixed(request):
     price2=request.POST['amount2'];
     us=NonFixedAmount(date=date2,type="non_fixed expense",shop_name=shop_name2,invoice_no=invoice_no2,item_name=item_name2,qty=qty2,price=price2);
     us.save();
+    messages.success(request,'Your Data is Sucessfuly Saved...')
     return render (request,"shop/Nonfixed.html",{})
 
 def Nonfixed(request):

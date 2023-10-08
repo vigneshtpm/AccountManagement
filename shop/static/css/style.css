@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 #menu{
     padding: 1px;
@@ -34,7 +35,7 @@ body{
     height: 900px;
     border-radius: 5px;
     box-shadow: 0px 0px 8px black;
-    opacity: 90%;
+    opacity: 85%;
 }
 #bottom{
     top:1175px;

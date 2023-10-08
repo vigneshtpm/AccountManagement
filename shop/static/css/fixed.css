@@ -226,3 +226,16 @@ transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-b
     outline: 2px solid #000075;
     outline-offset: -2px;
 }
+#mes{
+    border: 1px solid transparent;
+    background-color:#000099;
+    border-radius: 8px;
+    width: 400px;
+    border-color: #161616;
+    box-shadow: 0px 0px 8px rgb(208, 220, 240);
+    visibility: hidden;
+}
+#alert{
+    color:white;
+    width: 400px;
+}

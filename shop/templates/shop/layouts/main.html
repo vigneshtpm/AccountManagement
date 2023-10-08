@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'css/fixed.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 		<link rel="stylesheet" type="text/css" href="{% static 'css/statement.css' %}">
+		<script src="{%static 'js/alert.js'%}"></script>
 		<style>
 			#content{
 				background-image: url("{% static 'images/logo.jpg' %}");
@@ -54,6 +55,8 @@
 				{%block contenttitle%}
 				{%endblock contenttitle%}
 				</center><hr>
+				{%block alert%}
+				{%endblock alert%}
 				{%block content%}
 				{%endblock content%}
 			</div>

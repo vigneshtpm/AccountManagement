@@ -5,6 +5,15 @@
     {%block contenttitle%}	
         <h2> Fixed Amount</h2>			
     {%endblock contenttitle%}
+    {%block alert%}
+        {% if messages%}
+            {% for message in messages%}
+            <div id="mes" >
+               <h3 id="alert">&#128077; {{message}}</h3>
+            </div>
+            {%endfor%}
+        {%endif%}
+    {%endblock alert%}
     {%block content%}
     <h2>
     <form id="fixedmenu" autocomplete="off" method="post" action="insertfixed" >
