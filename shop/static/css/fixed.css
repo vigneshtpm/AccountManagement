@@ -61,7 +61,7 @@
 #billdate{
     box-sizing: border-box;
 font-family: inherit;
-font-size: 14px;
+font-size: 20px;
 vertical-align: baseline;
 font-weight: 400;
 line-height: 1.29;
@@ -85,7 +85,7 @@ transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-b
 #shopname{
     box-sizing: border-box;
 font-family: inherit;
-font-size: 14px;
+font-size: 20px;
 vertical-align: baseline;
 font-weight: 400;
 line-height: 1.29;
@@ -109,7 +109,7 @@ transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-b
 #invoiceno{
     box-sizing: border-box;
 font-family: inherit;
-font-size: 14px;
+font-size: 20px;
 vertical-align: baseline;
 font-weight: 400;
 line-height: 1.29;
@@ -133,7 +133,7 @@ transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-b
 #qty{
     box-sizing: border-box;
 font-family: inherit;
-font-size: 14px;
+font-size: 20px;
 vertical-align: baseline;
 font-weight: 400;
 line-height: 1.29;
@@ -157,7 +157,7 @@ transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-b
 #amount{
     box-sizing: border-box;
 font-family: inherit;
-font-size: 14px;
+font-size: 20px;
 vertical-align: baseline;
 font-weight: 400;
 line-height: 1.29;
@@ -181,7 +181,31 @@ transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-b
 #uploadfile{
     box-sizing: border-box;
 font-family: inherit;
-font-size: 14px;
+font-size: 13px;
+vertical-align: baseline;
+font-weight: 400;
+line-height: 1.29;
+letter-spacing: .16px;
+border-radius: 0;
+outline: 2px solid transparent;
+outline-offset: -2px;
+width: 30%;
+height: 30px;
+border: none;
+border-bottom: 2px solid rgb(19, 18, 18);
+background-color: #d1d0d0;
+padding: 0 16px;
+color: #161616;
+transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-bezier(.2,0,.38,.9); 
+}
+#uploadfile:focus{
+    outline: 2px solid #000075;
+    outline-offset: -2px;
+}
+#itemname{
+box-sizing: border-box;
+font-family: inherit;
+font-size: 20px;
 vertical-align: baseline;
 font-weight: 400;
 line-height: 1.29;
@@ -198,7 +222,7 @@ padding: 0 16px;
 color: #161616;
 transition: background-color 70ms cubic-bezier(.2,0,.38,.9),outline 70ms cubic-bezier(.2,0,.38,.9); 
 }
-#uploadfile:focus{
+#itemname:focus{
     outline: 2px solid #000075;
     outline-offset: -2px;
 }

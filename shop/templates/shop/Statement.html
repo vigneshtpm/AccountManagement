@@ -6,8 +6,13 @@
     <h2> Statement</h2>
     {%endblock contenttitle%}
     {%block content%}
-    <select id="cars">
-        <option value="Fixed Account">Fixed Account</option>
-        <option value="Non-Fixed Account">Non-Fixed Account</option>
-    </select>
+   
+    <form id="select">
+         <label for="type" id="sele1">Select Type &ensp; :</label>
+         &emsp;&emsp;<select id="type">
+             <option value="Fixed Account">Fixed Account</option>
+             <option value="Non-Fixed Account">Non-Fixed Account</option>
+         </select>
+         &emsp;&emsp;&emsp;&emsp;<input  id="submit" type="submit" value="Submit"></input>
+    </form>
     {%endblock content%}

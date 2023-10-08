@@ -1,9 +1,19 @@
 from django.db import models
 
-class Fixed(models.Model):
-    date = models.DateField()
-    type = models.CharField(max_length=100)
-    shop_name = models.CharField(max_length=200)
-    invoice_no = models.CharField(max_length=20)
-    qty = models.IntegerField()
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+class FixedAmount(models.Model):
+    date = models.DateField(default="")
+    type = models.CharField(max_length=50,default="")
+    shop_name = models.CharField(max_length=200,default="")
+    invoice_no = models.CharField(max_length=20,default="") 
+    item_name = models.CharField(max_length=200,default="")
+    qty = models.IntegerField(default="")
+    price = models.IntegerField(default="")
+
+class NonFixedAmount(models.Model):
+    date = models.DateField(default="")
+    type = models.CharField(max_length=50,default="")
+    shop_name = models.CharField(max_length=200,default="")
+    invoice_no = models.CharField(max_length=40,default="")
+    item_name = models.CharField(max_length=200,default="")
+    qty = models.IntegerField(default="")
+    price = models.IntegerField(default="")

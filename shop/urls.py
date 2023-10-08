@@ -10,6 +10,8 @@ urlpatterns = [
     path('Statement',views.Statement,name='Statement'),
     path('help',views.help,name='help'),
     path('about',views.about,name='about'),
+    path('insertfixed',views.insertfixed,name='insertfixed'),
+    path('insertnonfixed',views.insertnonfixed,name='insertnonfixed'),
 ]
 
 #if settings.DEBUG:
